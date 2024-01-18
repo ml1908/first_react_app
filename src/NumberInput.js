@@ -1,9 +1,10 @@
-﻿import {useState} from "react";
+﻿import {useEffect, useState} from "react";
 
 export const NumberInput = (props) => {
 // Hier alle berechnungen bevor das rendern beginnt.
 
-    const [zahl, setZahl] = useState(20)  // < ---- > das ganze wird auch Hook genannt // useState schreiben 
+    const [zahl, setZahl] = useState(20)  // < ---- > das ganze wird auch Hook genannt - useState schreiben 
+    
     
     return (
         <div style={{                                  // die zweite geschwungene Klammer bedeutet Objekt
